@@ -1,0 +1,167 @@
+/*Source Sans Pro Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,200&display=swap');
+:root{
+
+/*colors*/
+--col-white:rgba(255,255,255,1); 
+--col-container:#252525;
+--col-border:#a0a2aa;
+--col-dark-blue:#13213a;
+--col-hover:#5433D2;
+--col-body:#d3cbed;
+
+/*radius*/
+--radius:4px;
+
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+  font-family:  'Source Sans Pro', sans-serif;
+}
+
+body{
+  background-color: var(--col-body);
+  color: var(--col-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.container{
+  height: 387px;
+  width: 679px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 4px solid var(--col-border);
+  padding: 2.2rem;
+  background-color: var(--col-white);
+  border-radius: var(--radius);
+  justify-content: flex-start;
+  box-shadow: 30px 25px 2px rgb(50 12 117 / 6%)
+}
+/*----------------------------
+----------IMAGE BOX-----------
+-----------------------------*/
+.image-box{
+  height: 100%;
+  margin-right: 2rem;
+  width: 40%;
+  background-image: url("../images/patrick-malleret.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--radius);
+}
+/*----------------------------
+----------INFO BOX------------
+-----------------------------*/
+.info-box{
+  width: 60%;
+  padding: 1rem;
+  background-color: #d3cbed4f;
+}
+
+/*NAME, OCCUPATION,COUNTRY*/
+.main-title{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.job-name{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--col-border);
+}
+
+/*ICONS*/
+.icon-box{
+  margin-block:1rem;
+  display: flex;
+}
+.icon-box i{
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  cursor:pointer;
+  border: 1px solid;
+  margin-right: 10px;
+}
+.icon-box i:hover{
+  color: var(--col-hover);
+}
+
+/*VIDEOS*/
+.videos-box{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.video-item{
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-height: 95%;
+}
+.video-item img{
+  width: 100%;
+  cursor: pointer;
+}
+.video-item:hover{
+  opacity: 0.7;
+}
+
+/*CHECK PROFILE BUTTON*/
+.check-profile-box{
+  display: flex;
+  justify-content: flex-end;
+}
+.check-profile-btn{
+  border: none;
+  background-color: var(--col-dark-blue);
+  padding: 5px 12px;
+  color: var(--col-white);
+  font-size: 0.75rem;
+  font-weight: 100;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.check-profile-btn:hover{
+  background-color: var(--col-hover);
+  border-bottom-color: var(--col-text);
+}
+/*----------------------------
+------------MEDIA-------------
+-----------------------------*/
+@media (max-width:800px){
+  .container{
+    flex-direction: column;
+    height: unset;
+  }
+  .image-box{
+    margin-right: 0;
+    margin-bottom: 1rem;
+    height: 282px;
+    width: 100%;
+  }
+  .info-box{
+    width: 100%;
+  }
+}
+@media (max-width:415px){
+  body{
+    padding: 1.5rem;
+  }
+  .container{
+    padding: 1.2rem;
+    box-shadow: none;
+  }
+  .main-title{
+    font-size: 1.6rem;
+  }
+  .videos-box{
+    grid-gap:0.5rem;
+  }
+}
