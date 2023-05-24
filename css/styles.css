@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,200&display=swap');
 :root{
 
-/*colors*/
---col-white:rgba(255,255,255,1); 
---col-container:#252525;
---col-border:#a0a2aa;
---col-dark-blue:#13213a;
---col-hover:#5433D2;
---col-body:#d3cbed;
+ /*colors*/
+ --col-white:rgba(255,255,255,1); 
+ --col-container:#252525;
+ --col-border:#a0a2aa;
+ --col-dark-blue:#13213a;
+ --col-hover:#5433D2;
+ --col-body:#d3cbed;
 
-/*radius*/
---radius:4px;
+ /*radius*/
+ --radius:4px;
 
 }
 *{
-	padding:0;
-	margin:0;
-	box-sizing:border-box;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
   font-family:  'Source Sans Pro', sans-serif;
 }
 
